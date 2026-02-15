@@ -53,7 +53,7 @@ export default function VelocityConstantCalculator() {
       setResult(null);
       setMissingVar("");
       setVAvg(null);
-      setShowChart(false);
+      setShowCharts(false);
       return;
     }
 
@@ -70,7 +70,7 @@ export default function VelocityConstantCalculator() {
       if (tn === 0) {
         setResult("زمان نمی‌تواند صفر باشد");
         setVAvg(null);
-        setShowChart(false);
+        setShowCharts(false);
         return;
       }
       res = (xn - x0n) / tn;
@@ -79,14 +79,14 @@ export default function VelocityConstantCalculator() {
       if (vn === 0) {
         setResult("سرعت نمی‌تواند صفر باشد");
         setVAvg(null);
-        setShowChart(false);
+        setShowCharts(false);
         return;
       }
       res = (xn - x0n) / vn;
       missing = "t";
     } else {
       setResult("خطا");
-      setShowChart(false);
+      setShowCharts(false);
       return;
     }
 
