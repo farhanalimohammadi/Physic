@@ -1,5 +1,6 @@
 // app/physic12/layout.tsx
-import type { ReactNode, Metadata } from 'react';
+import type { ReactNode } from 'react';
+import type { Metadata } from 'next';
 import PhysicCompon from "@/components/layout/home-page/first-component"; // فرض: هدرت اینجاست
 
 export const metadata: Metadata = {
