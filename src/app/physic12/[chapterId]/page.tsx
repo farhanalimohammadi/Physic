@@ -44,15 +44,16 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
   }
 
   const chapterNumber = parseInt(chapterId.replace('chapter-', ''), 10);
-  const chapterTitles = {
-    1: 'حرکت بر خط راست',
-    2: 'دینامیک و حرکت دایره‌ای',
-    3: 'نوسان و موج',
-    4: 'برهم‌کنش‌های موج',
-    5: 'آشنایی با فیزیک اتمی',
-    6: 'آشنایی با فیزیک هسته‌ای',
-  };
-  const chapterTitle = chapterTitles[chapterNumber] || 'فصل ناشناخته';
+const chapterTitles: Record<number, string> = {
+  1: 'فیزیک پایه',
+  2: 'مکانیک',
+  3: 'الکتریسیته',
+  4: 'مغناطیس',
+  5: 'ترمودینامیک',
+  6: 'آشنایی با فیزیک هسته‌ای',
+};
+
+const chapterTitle = chapterTitles[chapterNumber] || 'فصل ناشناخته';
 
   // توضیحات تکمیلی هر فصل – آموزشی و گام‌به‌گام، با تمرکز روی محاسبه‌گر
   const chapterDescriptions = {
