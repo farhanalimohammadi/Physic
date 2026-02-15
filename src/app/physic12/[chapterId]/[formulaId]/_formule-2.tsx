@@ -561,7 +561,7 @@ export default function ConstantAccelerationCalculator() {
 
     let relevantFilled = filledCount;
 
-    let res: number;
+    let res: number = 0;
     let missing = "";
     let formula = "";
     let explanation = "";
@@ -687,7 +687,7 @@ export default function ConstantAccelerationCalculator() {
       }
     }
 
-    setResult(res?.toFixed(3) ?? 0);
+    setResult(res.toFixed(3));
     setMissingVar(missing);
     setUsedFormula(formula);
     setFormulaExplanation(explanation);
