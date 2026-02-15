@@ -687,7 +687,7 @@ export default function ConstantAccelerationCalculator() {
       }
     }
 
-    setResult(res.toFixed(3));
+    setResult(res?.toFixed(3) ?? 0);
     setMissingVar(missing);
     setUsedFormula(formula);
     setFormulaExplanation(explanation);
